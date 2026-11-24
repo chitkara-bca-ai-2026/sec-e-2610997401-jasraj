@@ -1,0 +1,27 @@
+# Lab 02 - Employee Information System
+
+# 1. Take input from the user and show data types
+emp_name = input("Enter Employee Name: ")
+print(f"Data type: {type(emp_name)}")
+
+emp_id = int(input("Enter Employee ID: "))
+print(f"Data type: {type(emp_id)}")
+
+salary = float(input("Enter Salary: "))
+print(f"Data type: {type(salary)}")
+
+department = input("Enter Department: ")
+print(f"Data type: {type(department)}")
+
+active_input = input("Is the employee active? (yes/no): ")
+is_active = active_input.strip().lower() == "yes"
+print(f"Data type: {type(is_active)}")
+
+# 3. Display the results in a clean formatted output
+print()
+print("--- Employee Details ---")
+print(f"Name       : {emp_name}")
+print(f"ID         : {emp_id}")
+print(f"Salary     : {salary}")
+print(f"Department : {department}")
+print(f"Active     : {is_active}")
